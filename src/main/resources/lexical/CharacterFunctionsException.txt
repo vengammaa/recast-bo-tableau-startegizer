@@ -1,0 +1,5 @@
+ASC = UNICODE
+CHAR = UNICHAR
+Concatenation( ${REPLACE(';',',')} ) = CONCATENATE
+TK_PLUS = &
++ = &

@@ -1,0 +1,23 @@
+=FLOOR(3.8)
+=FLOOR(CEIL(5.7))
+=SUM(FLOOR(5.6);CEIL(5.7))
+=Concatenation("hello" ;"world")
+=(lastExcutionDate();"dd.mm.yyyy")
+="hello " +" world"
+=("hello " +" world")
+=(2+" world")
+=(2 + " world")
+=([2000003]+3.5)
+="$"+(2000003+3.5)
+=(77+8+"hello"+7+8.3)
+=(7+8+"hello"+(7+8))
+="Last Updated On : " + FormatDate(LastExecutionDate();"dd Mmm yyyy hh:mm:ss a 'GMT'z")
+="Last Updated On : " + FormatDate(CURRENTDATE();"dd Mmm yyyy hh:mm:ss a 'GMT'z")
+=If [State] = "California" Then 0.1 Else 0.2
+=If ([State] = "California" Then [0.1] Else [0.2])
+=If [State] = "California" Then (If [State] = "MK" Then 0.1 Else 0.3) Else 0.2
+=If [State] = "California" Then (If [State] = "MK" Then (If ([State] = "XY" Then [0.4] Else [0.52])) Else 0.3) Else 0.2
+=If ([Brand Short Name] = "VSS" or [Brand Short Name]= "VSBA" or [Brand Short Name]"VSB") Then "VSS" Else [Brand Short Name]
+=(Truncate(DaysBetween([StartDate_DT]; [EndDate_DT]) / 7 ; 0) * 5) + ToNumber(Substr("1234555123444512333451222345111234500123450123455";((DayNumberOfWeek([StartDate_DT]) - 1) * 7 )+ Mod(DaysBetween([StartDate_DT];[EndDate_DT]); 7) + 1; 1))
+=ToDate(UserResponse("Enter Transaction Date (End)");"dd-MM-yyyy hh:mm:ss")
+=ToDate(UserResponse("Enter Transaction Date (Start)");"dd-MM-yyyy hh:mm:ss")
