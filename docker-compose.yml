@@ -1,0 +1,8 @@
+version: "3" 
+services:
+ recast-bo-tableau-startegizer:
+    image: recast-bo-tableau-startegizer
+    ports:
+      - "8774:8774"
+       depends_on:
+      - eureka-server
